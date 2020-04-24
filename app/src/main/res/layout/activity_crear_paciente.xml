@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:layout_height="match_parent"
+    tools:context=".PersonalMedico.CrearPaciente">
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        app:civ_border_width="3dp"
+        app:civ_border_color="@color/black"
+        android:layout_marginTop="10dp"
+        android:src="@drawable/ic_fallback_user"
+        android:id="@+id/imagen"
+        android:layout_marginBottom="10dp"
+        />
+
+    <com.github.nikartm.button.FitButton
+        android:id="@+id/editButton"
+        android:padding="10dp"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:enabled="true"
+        android:gravity="center"
+        android:onClick="editarImagen"
+        app:fb_backgroundColor="@color/button"
+        app:fb_cornerRadius="50dp"
+        app:fb_divColor="@color/button"
+        app:fb_shape="rectangle"
+        app:fb_text="Editar Imagen"
+        android:layout_marginBottom="20dp"
+        app:fb_textSize="15dp"
+        app:fb_textColor="@color/black" />
+
+    <EditText
+        android:id="@+id/nombre"
+        android:layout_marginBottom="10dp"
+        android:layout_marginEnd="30dp"
+        android:layout_marginStart="30dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/nom"/>
+
+    <EditText
+        android:id="@+id/contraseña"
+        android:layout_marginBottom="10dp"
+        android:layout_marginEnd="30dp"
+        android:layout_marginStart="30dp"
+        android:layout_width="match_parent"
+        android:inputType="textPassword"
+        android:layout_height="wrap_content"
+        android:hint="@string/contraseña"/>
+
+    <EditText
+        android:id="@+id/contraseña2"
+        android:layout_marginEnd="30dp"
+        android:layout_marginBottom="10dp"
+        android:layout_marginStart="30dp"
+        android:layout_width="match_parent"
+        android:inputType="textPassword"
+        android:layout_height="wrap_content"
+        android:hint="@string/vuelva_a_introducir_la_contrase_a"/>
+
+    <EditText
+        android:id="@+id/email"
+        android:layout_marginEnd="30dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginBottom="10dp"
+        android:layout_width="match_parent"
+        android:inputType="textEmailAddress"
+        android:layout_height="wrap_content"
+        android:hint="@string/emai"/>
+
+    <EditText
+        android:id="@+id/telefono"
+        android:layout_marginEnd="30dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginBottom="10dp"
+        android:layout_width="match_parent"
+        android:inputType="phone"
+        android:layout_height="wrap_content"
+        android:hint="@string/n_mero_de_telefon"/>
+
+    <com.github.nikartm.button.FitButton
+        android:id="@+id/guardar"
+        android:padding="10dp"
+        android:paddingEnd="30dp"
+        android:onClick="guardarPaciente"
+        android:layout_marginTop="20dp"
+        android:paddingStart="30dp"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:enabled="true"
+        android:gravity="center"
+        app:fb_backgroundColor="@color/button"
+        app:fb_cornerRadius="50dp"
+        app:fb_divColor="@color/button"
+        app:fb_shape="rectangle"
+        app:fb_text="Guardar"
+        android:layout_marginBottom="20dp"
+        app:fb_textSize="15dp"
+        app:fb_textColor="@color/black" />
+</LinearLayout>

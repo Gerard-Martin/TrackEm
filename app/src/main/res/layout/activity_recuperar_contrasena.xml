@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:background="@drawable/drawable_fondo"
+    android:layout_height="match_parent"
+    tools:context=".Compartidas.RecuperarContrasena">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:orientation="vertical"
+        android:layout_weight="2">
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_marginTop="50dp"
+            android:layout_height="150dp"
+            android:background="@drawable/logoprincipal"
+            android:id="@+id/logoImageView"
+            android:scaleType="fitXY"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/introduzca_su_correo_para_poder_recuperar_la_contrase_a"
+            android:textSize="25dp"
+            android:textColor="@color/black"
+            android:gravity="center"/>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:layout_weight="2">
+
+        <com.github.florent37.materialtextfield.MaterialTextField
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginLeft="4dp"
+            android:layout_marginRight="4dp"
+            android:layout_marginTop="20dp"
+            app:mtf_cardCollapsedHeight="4dp"
+            app:mtf_hasFocus="false"
+            app:mtf_image="@drawable/ic_email_24px"
+            app:mtf_openKeyboardOnFocus="true">
+            <EditText
+                android:id="@+id/rec_email"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/mail"
+                android:maxLines="1"
+                android:inputType="textEmailAddress"
+                android:textColor="@android:color/black"
+                android:textColorHint="@android:color/holo_blue_dark"
+                android:textSize="15sp" />
+
+        </com.github.florent37.materialtextfield.MaterialTextField>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:gravity="center"
+        android:layout_marginBottom="20dp"
+        android:layout_weight="1">
+        <com.github.nikartm.button.FitButton
+            android:id="@+id/bt5"
+            android:layout_marginStart="10dp"
+            android:padding="15dp"
+            android:layout_width="wrap_content"
+            android:onClick="recuperar"
+            android:layout_height="50dp"
+            android:enabled="true"
+            android:gravity="center"
+            app:fb_backgroundColor="@color/colorPrimaryDark"
+            app:fb_cornerRadius="50dp"
+            app:fb_divColor="@color/button"
+            android:layout_marginEnd="10dp"
+            app:fb_shape="rectangle"
+            app:fb_text="Enviar correo de recuperación"
+            app:fb_textSize="15dp"
+            app:fb_textColor="@color/black" />
+
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.preference.PreferenceScreen xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+        <EditTextPreference
+            android:dialogTitle="Nombre"
+            app:iconSpaceReserved="false"
+            android:key="Nombre"
+            android:summary="Introduzca su nombre"
+            android:title="Nombre" />
+        <EditTextPreference
+            android:dialogTitle="Numero de telefono"
+            app:iconSpaceReserved="false"
+            android:key="Numero"
+            android:summary="Introduzca su numero de telefono"
+            android:title="Numero de teléfono" />
+
+        <Preference
+            android:title="Contraseña"
+            app:iconSpaceReserved="false"
+            android:key="Contraseña"
+            android:summary="Cambiar Contraseña"/>
+
+</androidx.preference.PreferenceScreen>

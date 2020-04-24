@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_height="match_parent"
+    tools:context=".Pacientes.SucesoExtraordinario">
+    <LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="20dp"
+    android:layout_marginBottom="20dp"
+    android:orientation="vertical">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="25dp"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            android:gravity="center"
+            android:text="@string/qu_ha_ocurrido"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="20dp"
+            android:layout_marginEnd="20dp"
+            android:layout_marginStart="20dp"
+            android:textColor="@color/black"
+            android:gravity="center"
+            android:text="@string/describa_con_el_m_ximo_detalle_posible_lo_que_ha_sucedido"/>
+    </LinearLayout>
+    <androidx.cardview.widget.CardView
+        android:id="@+id/card"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:backgroundTint="@color/button"
+        android:elevation="30dp"
+        android:orientation="horizontal"
+        android:layout_weight="5"
+        card_view:cardCornerRadius="35dp"
+        card_view:cardUseCompatPadding="true"
+        tools:ignore="NamespaceTypo">
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/informacion"
+            android:layout_margin="15dp"
+            android:gravity="center"
+            android:hint="@string/introduzca_la_informaci_n_correspondiente"
+            android:orientation="vertical">
+
+
+
+        </EditText>
+    </androidx.cardview.widget.CardView>
+    <com.github.nikartm.button.FitButton
+        android:id="@+id/bt5"
+        android:layout_weight="0.1"
+        android:layout_marginStart="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:enabled="true"
+        android:gravity="center"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="20dp"
+        app:fb_backgroundColor="@color/button"
+        app:fb_cornerRadius="50dp"
+        app:fb_divColor="@color/button"
+        android:layout_marginEnd="10dp"
+        app:fb_shape="rectangle"
+        app:fb_text="Guardar"
+        android:onClick="guardar"
+        app:fb_textSize="15dp"
+        app:fb_textColor="@color/black" />
+</LinearLayout>

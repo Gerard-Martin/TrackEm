@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:gravity="center"
+    android:orientation="vertical"
+    tools:context=".PersonalMedico.ListaPacientes">
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/hp"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:visibility="gone"
+        android:layout_weight="13"/>
+    <TextView
+        android:id="@+id/np"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        android:gravity="center"
+        android:layout_weight="13"
+        android:text="@string/no_hay_ning_n_paciente_registrado">
+    </TextView>
+    <com.github.nikartm.button.FitButton
+        android:id="@+id/añadir"
+        android:padding="10dp"
+        android:paddingEnd="30dp"
+        android:onClick="crearPaciente"
+        android:layout_marginTop="20dp"
+        android:paddingStart="30dp"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:enabled="true"
+        android:gravity="center"
+        app:fb_backgroundColor="@color/button"
+        app:fb_cornerRadius="50dp"
+        app:fb_divColor="@color/button"
+        app:fb_shape="rectangle"
+        app:fb_text="Añadir Paciente"
+        android:layout_marginBottom="20dp"
+        app:fb_textSize="20dp"
+        app:fb_textColor="@color/black" />
+</LinearLayout>
